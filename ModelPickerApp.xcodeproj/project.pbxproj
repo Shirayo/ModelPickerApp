@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		F987A0DA27E31CB500C45B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0D927E31CB500C45B93 /* AppDelegate.swift */; };
 		F987A0DC27E31CB500C45B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0DB27E31CB500C45B93 /* ContentView.swift */; };
-		F987A0DE27E31CB500C45B93 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F987A0DD27E31CB500C45B93 /* Experience.rcproject */; };
 		F987A0E027E31CB600C45B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F987A0DF27E31CB600C45B93 /* Assets.xcassets */; };
 		F987A0E327E31CB600C45B93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F987A0E227E31CB600C45B93 /* Preview Assets.xcassets */; };
 		F987A0ED27E31CB600C45B93 /* ModelPickerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0EC27E31CB600C45B93 /* ModelPickerAppTests.swift */; };
 		F987A0F727E31CB600C45B93 /* ModelPickerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0F627E31CB600C45B93 /* ModelPickerAppUITests.swift */; };
 		F987A0F927E31CB600C45B93 /* ModelPickerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0F827E31CB600C45B93 /* ModelPickerAppUITestsLaunchTests.swift */; };
+		F987A10B27E31DBE00C45B93 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F987A10727E31DBD00C45B93 /* tv_retro.usdz */; };
+		F987A10D27E31DBE00C45B93 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F987A10927E31DBE00C45B93 /* fender_stratocaster.usdz */; };
+		F987A10F27E34D4200C45B93 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A10E27E34D4200C45B93 /* Model.swift */; };
+		F987A11227E3522A00C45B93 /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A11127E3522A00C45B93 /* PlacementButtonsView.swift */; };
+		F987A11427E3524600C45B93 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A11327E3524600C45B93 /* ModelPickerView.swift */; };
+		F987A11727E3556C00C45B93 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = F987A11627E3556C00C45B93 /* FocusEntity */; };
+		F987A11A27E4753F00C45B93 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A11927E4753E00C45B93 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 		F987A0D627E31CB500C45B93 /* ModelPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F987A0D927E31CB500C45B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F987A0DB27E31CB500C45B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F987A0DD27E31CB500C45B93 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		F987A0DF27E31CB600C45B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F987A0E227E31CB600C45B93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F987A0E827E31CB600C45B93 /* ModelPickerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelPickerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +51,12 @@
 		F987A0F227E31CB600C45B93 /* ModelPickerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelPickerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F987A0F627E31CB600C45B93 /* ModelPickerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerAppUITests.swift; sourceTree = "<group>"; };
 		F987A0F827E31CB600C45B93 /* ModelPickerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F987A10727E31DBD00C45B93 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tv_retro.usdz; path = ../../../../Downloads/tv_retro.usdz; sourceTree = "<group>"; };
+		F987A10927E31DBE00C45B93 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = fender_stratocaster.usdz; path = ../../../../Downloads/fender_stratocaster.usdz; sourceTree = "<group>"; };
+		F987A10E27E34D4200C45B93 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F987A11127E3522A00C45B93 /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
+		F987A11327E3524600C45B93 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
+		F987A11927E4753E00C45B93 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F987A11727E3556C00C45B93 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +108,14 @@
 		F987A0D827E31CB500C45B93 /* ModelPickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				F987A11827E4753100C45B93 /* View Models */,
+				F987A11027E3522300C45B93 /* Views */,
 				F987A0D927E31CB500C45B93 /* AppDelegate.swift */,
+				F987A10527E31D9100C45B93 /* Models */,
 				F987A0DB27E31CB500C45B93 /* ContentView.swift */,
-				F987A0DD27E31CB500C45B93 /* Experience.rcproject */,
 				F987A0DF27E31CB600C45B93 /* Assets.xcassets */,
 				F987A0E127E31CB600C45B93 /* Preview Content */,
+				F987A10E27E34D4200C45B93 /* Model.swift */,
 			);
 			path = ModelPickerApp;
 			sourceTree = "<group>";
@@ -130,6 +145,32 @@
 			path = ModelPickerAppUITests;
 			sourceTree = "<group>";
 		};
+		F987A10527E31D9100C45B93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F987A10927E31DBE00C45B93 /* fender_stratocaster.usdz */,
+				F987A10727E31DBD00C45B93 /* tv_retro.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F987A11027E3522300C45B93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F987A11127E3522A00C45B93 /* PlacementButtonsView.swift */,
+				F987A11327E3524600C45B93 /* ModelPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F987A11827E4753100C45B93 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F987A11927E4753E00C45B93 /* ContentViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +187,9 @@
 			dependencies = (
 			);
 			name = ModelPickerApp;
+			packageProductDependencies = (
+				F987A11627E3556C00C45B93 /* FocusEntity */,
+			);
 			productName = ModelPickerApp;
 			productReference = F987A0D627E31CB500C45B93 /* ModelPickerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +262,9 @@
 				Base,
 			);
 			mainGroup = F987A0CD27E31CB500C45B93;
+			packageReferences = (
+				F987A11527E3556C00C45B93 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = F987A0D727E31CB500C45B93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F987A0E327E31CB600C45B93 /* Preview Assets.xcassets in Resources */,
+				F987A10D27E31DBE00C45B93 /* fender_stratocaster.usdz in Resources */,
+				F987A10B27E31DBE00C45B93 /* tv_retro.usdz in Resources */,
 				F987A0E027E31CB600C45B93 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F987A11427E3524600C45B93 /* ModelPickerView.swift in Sources */,
+				F987A11227E3522A00C45B93 /* PlacementButtonsView.swift in Sources */,
+				F987A11A27E4753F00C45B93 /* ContentViewModel.swift in Sources */,
+				F987A10F27E34D4200C45B93 /* Model.swift in Sources */,
 				F987A0DC27E31CB500C45B93 /* ContentView.swift in Sources */,
 				F987A0DA27E31CB500C45B93 /* AppDelegate.swift in Sources */,
-				F987A0DE27E31CB500C45B93 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F987A11527E3556C00C45B93 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F987A11627E3556C00C45B93 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F987A11527E3556C00C45B93 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F987A0CE27E31CB500C45B93 /* Project object */;
 }

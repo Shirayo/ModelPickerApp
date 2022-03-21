@@ -22,7 +22,7 @@ struct PlacementButtonsView: View {
                     .frame(width: 60, height: 60)
                     .background(.white.opacity(0.75))
                     .cornerRadius(30)
-
+                    .foregroundColor(.black)
                     .padding(20)
             }
             Button {

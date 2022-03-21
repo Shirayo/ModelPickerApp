@@ -19,7 +19,12 @@ class Model {
         self.name = modelName
         let fileName = modelName + ".usdz"
         ModelEntity.loadModelAsync(named: fileName).sink { completion in
-            print("oopsie doopsie")
+            switch completion {
+            case .finished:
+                print("finished")
+            case .failure(let error):
+                print("oopsie doopsie: \(error)")
+            }
         } receiveValue: { modelEntity in
             self.Entity = modelEntity
             print("DEBUG: successfully loaded modelEntity for modelName")

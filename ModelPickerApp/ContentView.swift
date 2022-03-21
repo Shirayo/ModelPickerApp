@@ -14,8 +14,11 @@ import ARKit
 struct ContentView : View {
     
     @State private var isPlacementEnabled = false
-    @State private var selectedModel: Model?
+//    @State private var selectedModel: Model?
+    @State private var isSettingsOpen = false
     @State private var modelConfirmedForPlacement: Model?
+    
+    @ObservedObject private var vm: ContentViewModel = .init()
     
     private var models: [Model] = {
         let fileManager = FileManager.default
@@ -35,108 +38,52 @@ struct ContentView : View {
         ZStack(alignment: .bottom) {
             ARViewContainer(modelConfirmedForPlacement: $modelConfirmedForPlacement)
                 .ignoresSafeArea()
+            HStack(alignment: .bottom) {
+                Spacer()
+                Button {
+                    isSettingsOpen = true
+                } label: {
+                    Image(systemName: "folder.badge.gearshape")
+                        .frame(width: 60, height: 60)
+                        .background(.white.opacity(0.75))
+                        .foregroundColor(.black)
+                        .cornerRadius(30)
+                        .padding(20)
+                }
+            }
+            if vm.isPlacementEnabled {
+                PlacementButtonsView(isPlacementEnabled: $vm.isPlacementEnabled, selectedModel: $vm.selectedModel, modelConfirmedForPlacement: $modelConfirmedForPlacement)
+            }
+        }
+        .sheet(isPresented: $isSettingsOpen) {
+            print(isSettingsOpen)
+        } content: {
+            ZStack {
+                Color.black.opacity(0.1)
+                    .ignoresSafeArea()
+                    .background(.ultraThinMaterial)
+
+                ModelPickerView(isPlacementEnabled: $vm.isPlacementEnabled, selectedModel: $vm.selectedModel, models: models)
+            }
+        }
+
+    }
+
+}
+    
+struct BackgroundClearView: UIViewRepresentable {
+    func makeUIView(context: Context) -> UIView {
+        let view = UIView()
+        DispatchQueue.main.async {
+            view.superview?.superview?.backgroundColor = .clear
             
-            if isPlacementEnabled {
-                PlacementButtonsView(isPlacementEnabled: $isPlacementEnabled, selectedModel: $selectedModel, modelConfirmedForPlacement: $modelConfirmedForPlacement)
-            } else {
-                ModelPickerView(isPlacementEnabled: $isPlacementEnabled, selectedModel: $selectedModel, models: models)
-            }
         }
+        return view
     }
 
-}
-    
-class CustomARView: ARView {
-//    let focusSquare = FocusEntity(on: self, focus: .classic)
-    enum FocusStyleChoices {
-        case classic
-        case material
-        case color
-      }
-    
-    let focusStyle: FocusStyleChoices = .classic
-    var focusEntity: FocusEntity?
-    required init(frame frameRect: CGRect) {
-        super.init(frame: frameRect)
-        self.setupConfig()
-        switch self.focusStyle {
-        case .color:
-            self.focusEntity = FocusEntity(on: self, focus: .plane)
-        case .material:
-            do {
-                let onColor: MaterialColorParameter = try .texture(.load(named: "Add"))
-                let offColor: MaterialColorParameter = try .texture(.load(named: "Open"))
-                self.focusEntity = FocusEntity(
-                    on: self,
-                    style: .colored(
-                        onColor: onColor, offColor: offColor,
-                        nonTrackingColor: offColor
-                    )
-                )
-            } catch {
-                self.focusEntity = FocusEntity(on: self, focus: .classic)
-                print("Unable to load plane textures")
-                print(error.localizedDescription)
-            }
-        default:
-            self.focusEntity = FocusEntity(on: self, focus: .classic)
-        }
-    }
-    
-    func setupConfig() {
-        let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal]
-        session.run(config, options: [])
-    }
-    
-    @objc required dynamic init?(coder decoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    func updateUIView(_ uiView: UIView, context: Context) {}
 }
 
-extension CustomARView: FocusEntityDelegate {
-  func toTrackingState() {
-    print("tracking")
-  }
-  func toInitializingState() {
-    print("initializing")
-  }
-}
-
-struct ARViewContainer: UIViewRepresentable {
-    
-    @Binding var modelConfirmedForPlacement: Model?
-    
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = CustomARView(frame: .zero)
-        
-        let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal, .vertical]
-        
-        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
-            config.sceneReconstruction = .mesh
-        }
-        
-        arView.session.run(config)
-        
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {
-        if let model = modelConfirmedForPlacement {
-            if let modelEntity = model.Entity {
-                let anchorEntity = AnchorEntity(plane: .any)
-                anchorEntity.addChild(modelEntity)
-                uiView.scene.addAnchor(anchorEntity.clone(recursive: true))
-            } else {
-                //error handling...
-            }
-        }
-    }
-    
-}
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {

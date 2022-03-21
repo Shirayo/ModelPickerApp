@@ -6,11 +6,11 @@
 //
 
 import Foundation
+import Combine
 
 class ContentViewModel: ObservableObject {
     
     @Published var isPlacementEnabled = false
-    @Published var selectedModel: Model?
-    @Published var modelConfirmedForPlacement: Model?
-    
+    @Published var selectedModel: Model? = nil
+ 
 }

@@ -23,13 +23,13 @@ struct ModelPickerView: View {
                     Button {
                         isPlacementEnabled = true
                         selectedModel = model
-
                         presentationMode.wrappedValue.dismiss()
                     } label: {
                         Image(model.name)
                             .resizable()
                             .aspectRatio(1, contentMode: .fit)
-                            .background(.clear)
+//                            .background(.clear)
+                            .frame(width: 150, height: 150)
                             .cornerRadius(12)
                     }
                     .buttonStyle(PlainButtonStyle())

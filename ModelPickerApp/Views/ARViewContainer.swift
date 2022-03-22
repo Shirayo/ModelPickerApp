@@ -23,7 +23,6 @@ struct ARViewContainer: UIViewRepresentable {
         if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
             config.sceneReconstruction = .mesh
         }
-        print("heh")
         arView.session.run(config)
         
         let coachingOverlay = ARCoachingOverlayView()
@@ -33,7 +32,7 @@ struct ARViewContainer: UIViewRepresentable {
         arView.addSubview(coachingOverlay)
         
         
-        arView.debugOptions = [.showFeaturePoints]
+//        arView.debugOptions = [.showFeaturePoints]
 
         return arView
         
@@ -42,7 +41,7 @@ struct ARViewContainer: UIViewRepresentable {
     func updateUIView(_ uiView: ARView, context: Context) {
         if let model = modelConfirmedForPlacement {
             if let modelEntity = model.Entity {
-                let anchorEntity = AnchorEntity(plane: .any)
+                let anchorEntity = AnchorEntity(plain: .any)
                 anchorEntity.addChild(modelEntity)
                 uiView.scene.addAnchor(anchorEntity.clone(recursive: true))
             } else {

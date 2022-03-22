@@ -15,6 +15,11 @@ class Model {
     
     private var cancellable = Set<AnyCancellable>()
     
+    init(entity: ModelEntity) {
+        self.name = "test"
+        self.Entity = entity
+    }
+    
     init(modelName: String) {
         self.name = modelName
         let fileName = modelName + ".usdz"

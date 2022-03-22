@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F95FB97A27E867A3008843AF /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F95FB97727E867A3008843AF /* wateringcan.usdz */; };
-		F95FB97B27E867A3008843AF /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F95FB97827E867A3008843AF /* chair_swan.usdz */; };
-		F95FB97C27E867A3008843AF /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F95FB97927E867A3008843AF /* gramophone.usdz */; };
-		F95FB97E27E8707F008843AF /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F95FB97D27E8707F008843AF /* cup_saucer_set.usdz */; };
+		842031E327EA00C6006DB6C7 /* CustomGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842031E227EA00C6006DB6C7 /* CustomGridCell.swift */; };
+		84BBE9D127E9CA020032FEEF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 84BBE9D027E9CA020032FEEF /* Kingfisher */; };
 		F987A0DA27E31CB500C45B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0D927E31CB500C45B93 /* AppDelegate.swift */; };
 		F987A0DC27E31CB500C45B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0DB27E31CB500C45B93 /* ContentView.swift */; };
 		F987A0E027E31CB600C45B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F987A0DF27E31CB600C45B93 /* Assets.xcassets */; };
@@ -18,13 +16,11 @@
 		F987A0ED27E31CB600C45B93 /* ModelPickerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0EC27E31CB600C45B93 /* ModelPickerAppTests.swift */; };
 		F987A0F727E31CB600C45B93 /* ModelPickerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0F627E31CB600C45B93 /* ModelPickerAppUITests.swift */; };
 		F987A0F927E31CB600C45B93 /* ModelPickerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A0F827E31CB600C45B93 /* ModelPickerAppUITestsLaunchTests.swift */; };
-		F987A10D27E31DBE00C45B93 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F987A10927E31DBE00C45B93 /* fender_stratocaster.usdz */; };
 		F987A10F27E34D4200C45B93 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A10E27E34D4200C45B93 /* Model.swift */; };
 		F987A11227E3522A00C45B93 /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A11127E3522A00C45B93 /* PlacementButtonsView.swift */; };
 		F987A11427E3524600C45B93 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A11327E3524600C45B93 /* ModelPickerView.swift */; };
 		F987A11727E3556C00C45B93 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = F987A11627E3556C00C45B93 /* FocusEntity */; };
 		F987A11A27E4753F00C45B93 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A11927E4753E00C45B93 /* ContentViewModel.swift */; };
-		F987A12027E4861C00C45B93 /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F987A11F27E4861C00C45B93 /* AirForce.usdz */; };
 		F987A12327E4865700C45B93 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A12227E4865700C45B93 /* CustomARView.swift */; };
 		F987A12527E486D800C45B93 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987A12427E486D800C45B93 /* ARViewContainer.swift */; };
 /* End PBXBuildFile section */
@@ -47,10 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F95FB97727E867A3008843AF /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = wateringcan.usdz; path = ../../../../Downloads/wateringcan.usdz; sourceTree = "<group>"; };
-		F95FB97827E867A3008843AF /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = chair_swan.usdz; path = ../../../../Downloads/chair_swan.usdz; sourceTree = "<group>"; };
-		F95FB97927E867A3008843AF /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = gramophone.usdz; path = ../../../../Downloads/gramophone.usdz; sourceTree = "<group>"; };
-		F95FB97D27E8707F008843AF /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = cup_saucer_set.usdz; path = ../../../../Downloads/cup_saucer_set.usdz; sourceTree = "<group>"; };
+		842031E227EA00C6006DB6C7 /* CustomGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridCell.swift; sourceTree = "<group>"; };
 		F987A0D627E31CB500C45B93 /* ModelPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F987A0D927E31CB500C45B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F987A0DB27E31CB500C45B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,12 +54,10 @@
 		F987A0F227E31CB600C45B93 /* ModelPickerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelPickerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F987A0F627E31CB600C45B93 /* ModelPickerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerAppUITests.swift; sourceTree = "<group>"; };
 		F987A0F827E31CB600C45B93 /* ModelPickerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F987A10927E31DBE00C45B93 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = fender_stratocaster.usdz; path = ../../../../Downloads/fender_stratocaster.usdz; sourceTree = "<group>"; };
 		F987A10E27E34D4200C45B93 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F987A11127E3522A00C45B93 /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
 		F987A11327E3524600C45B93 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
 		F987A11927E4753E00C45B93 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		F987A11F27E4861C00C45B93 /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = AirForce.usdz; path = ../../../../Downloads/AirForce.usdz; sourceTree = "<group>"; };
 		F987A12227E4865700C45B93 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		F987A12427E486D800C45B93 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BBE9D127E9CA020032FEEF /* Kingfisher in Frameworks */,
 				F987A11727E3556C00C45B93 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842031DF27EA009A006DB6C7 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				842031E227EA00C6006DB6C7 /* CustomGridCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		84BBE9D227E9CA560032FEEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F987A0CD27E31CB500C45B93 = {
 			isa = PBXGroup;
 			children = (
@@ -120,11 +127,12 @@
 		F987A0D827E31CB500C45B93 /* ModelPickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				842031DF27EA009A006DB6C7 /* Custom Views */,
+				84BBE9D227E9CA560032FEEF /* Models */,
 				F987A12127E4863F00C45B93 /* Custom Components */,
 				F987A11827E4753100C45B93 /* View Models */,
 				F987A11027E3522300C45B93 /* Views */,
 				F987A0D927E31CB500C45B93 /* AppDelegate.swift */,
-				F987A10527E31D9100C45B93 /* Models */,
 				F987A0DB27E31CB500C45B93 /* ContentView.swift */,
 				F987A0DF27E31CB600C45B93 /* Assets.xcassets */,
 				F987A0E127E31CB600C45B93 /* Preview Content */,
@@ -156,19 +164,6 @@
 				F987A0F827E31CB600C45B93 /* ModelPickerAppUITestsLaunchTests.swift */,
 			);
 			path = ModelPickerAppUITests;
-			sourceTree = "<group>";
-		};
-		F987A10527E31D9100C45B93 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F95FB97D27E8707F008843AF /* cup_saucer_set.usdz */,
-				F95FB97827E867A3008843AF /* chair_swan.usdz */,
-				F95FB97927E867A3008843AF /* gramophone.usdz */,
-				F95FB97727E867A3008843AF /* wateringcan.usdz */,
-				F987A11F27E4861C00C45B93 /* AirForce.usdz */,
-				F987A10927E31DBE00C45B93 /* fender_stratocaster.usdz */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F987A11027E3522300C45B93 /* Views */ = {
@@ -215,6 +210,7 @@
 			name = ModelPickerApp;
 			packageProductDependencies = (
 				F987A11627E3556C00C45B93 /* FocusEntity */,
+				84BBE9D027E9CA020032FEEF /* Kingfisher */,
 			);
 			productName = ModelPickerApp;
 			productReference = F987A0D627E31CB500C45B93 /* ModelPickerApp.app */;
@@ -290,6 +286,7 @@
 			mainGroup = F987A0CD27E31CB500C45B93;
 			packageReferences = (
 				F987A11527E3556C00C45B93 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				84BBE9CF27E9CA020032FEEF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = F987A0D727E31CB500C45B93 /* Products */;
 			projectDirPath = "";
@@ -307,14 +304,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F95FB97B27E867A3008843AF /* chair_swan.usdz in Resources */,
-				F987A12027E4861C00C45B93 /* AirForce.usdz in Resources */,
 				F987A0E327E31CB600C45B93 /* Preview Assets.xcassets in Resources */,
-				F987A10D27E31DBE00C45B93 /* fender_stratocaster.usdz in Resources */,
-				F95FB97E27E8707F008843AF /* cup_saucer_set.usdz in Resources */,
 				F987A0E027E31CB600C45B93 /* Assets.xcassets in Resources */,
-				F95FB97C27E867A3008843AF /* gramophone.usdz in Resources */,
-				F95FB97A27E867A3008843AF /* wateringcan.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +334,7 @@
 				F987A12527E486D800C45B93 /* ARViewContainer.swift in Sources */,
 				F987A11227E3522A00C45B93 /* PlacementButtonsView.swift in Sources */,
 				F987A11A27E4753F00C45B93 /* ContentViewModel.swift in Sources */,
+				842031E327EA00C6006DB6C7 /* CustomGridCell.swift in Sources */,
 				F987A10F27E34D4200C45B93 /* Model.swift in Sources */,
 				F987A0DC27E31CB500C45B93 /* ContentView.swift in Sources */,
 				F987A12327E4865700C45B93 /* CustomARView.swift in Sources */,
@@ -434,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -570,7 +562,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB6K9AT64H;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shirayo-own.ModelPickerAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,7 +582,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB6K9AT64H;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shirayo-own.ModelPickerAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -679,6 +671,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		84BBE9CF27E9CA020032FEEF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		F987A11527E3556C00C45B93 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
@@ -690,6 +690,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		84BBE9D027E9CA020032FEEF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84BBE9CF27E9CA020032FEEF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		F987A11627E3556C00C45B93 /* FocusEntity */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F987A11527E3556C00C45B93 /* XCRemoteSwiftPackageReference "FocusEntity" */;

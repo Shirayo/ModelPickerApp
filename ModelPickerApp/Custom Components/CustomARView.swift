@@ -56,13 +56,3 @@ class CustomARView: ARView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-extension CustomARView: FocusEntityDelegate {
-    func toTrackingState() {
-        print("tracking a")
-    }
-    
-    func toInitializingState() {
-        print("initializing")
-    }
-}

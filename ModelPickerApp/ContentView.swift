@@ -12,7 +12,6 @@ import Combine
 import ARKit
 
 struct ContentView : View {
-    
     @State private var isPlacementEnabled = false
 //    @State private var selectedModel: Model?
     @State private var isSettingsOpen = false
@@ -55,6 +54,8 @@ struct ContentView : View {
                 PlacementButtonsView(isPlacementEnabled: $vm.isPlacementEnabled, selectedModel: $vm.selectedModel, modelConfirmedForPlacement: $modelConfirmedForPlacement)
             }
         }
+        
+        
         .sheet(isPresented: $isSettingsOpen) {
             print(isSettingsOpen)
         } content: {
@@ -63,10 +64,9 @@ struct ContentView : View {
                     .ignoresSafeArea()
                     .background(.ultraThinMaterial)
 
-                ModelPickerView(isPlacementEnabled: $vm.isPlacementEnabled, selectedModel: $vm.selectedModel, models: models)
+                ModelPickerView(isPlacementEnabled: $vm.isPlacementEnabled, selectedModel: $vm.selectedModel)
             }
         }
-
     }
 
 }
